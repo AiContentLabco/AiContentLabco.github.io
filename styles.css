@@ -19,3 +19,14 @@ footer{background:var(--dark);color:#fff;padding:55px 0}.footer-inner{display:gr
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
 @media(max-width:900px){.hero-grid,.section-head,.about-grid,.contact-grid{grid-template-columns:1fr;gap:45px}.service-grid,.portfolio-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.footer-inner{grid-template-columns:1fr}.footer-links{justify-content:flex-start}.copyright{text-align:left}.hero-visual{min-height:440px}.section-head{margin-bottom:40px}.service-card.featured{transform:none}}
 @media(max-width:650px){.container{width:min(100% - 28px,var(--max))}.nav{height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;left:14px;right:14px;top:74px;background:white;border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.nav-links.open{display:flex}.nav-links a{padding:10px}.nav-cta{text-align:center}.hero{padding:70px 0}.hero-proof{gap:12px;flex-wrap:wrap}.hero-proof div{min-width:105px}.hero-visual{min-height:380px}.content-card{width:94%}.mock-post{min-height:255px}.mock-post h3{font-size:25px}.floating-card{right:-5px;top:70px}.trust-inner{display:grid;padding:18px 0;gap:10px}.trust-inner div{gap:15px;flex-wrap:wrap}.section{padding:75px 0}.service-grid,.portfolio-grid,.steps{grid-template-columns:1fr}.service-card.featured{transform:none}.portfolio-art{height:260px}.about-panel,.founding-card{padding:30px}.about-panel h2,.contact-copy h2{font-size:38px}.contact-grid{gap:30px}.footer-links{flex-wrap:wrap}}
+
+
+/* Live sample portfolio links */
+.portfolio-link{display:block;color:inherit;text-decoration:none}
+.image-art{position:relative;overflow:hidden;min-height:360px}
+.image-art img{display:block;width:100%;height:360px;object-fit:cover;transition:transform .35s ease}
+.portfolio-card:hover .image-art img{transform:scale(1.025)}
+.image-art span{position:absolute;left:20px;bottom:20px;z-index:2}
+.sample-btn{font-size:.85rem;font-weight:700;text-decoration:none;white-space:nowrap}
+.sample-btn:hover{text-decoration:underline}
+@media (max-width:700px){.image-art,.image-art img{min-height:300px;height:300px}}
